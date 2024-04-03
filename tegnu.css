@@ -1,0 +1,792 @@
+:root{
+    --black-color:#101920;
+    --yellow-color:#ffe71f;
+    --white-color:#fcf6ff;
+}
+*{
+    text-decoration: none;
+    list-style-type: none;
+}
+body{
+    overflow-x: hidden;
+    margin:0;
+    width:100%;
+    height:100%;
+
+}
+#checkboxicon{
+    display:none;
+    float: right;
+    color: var(--white-color);
+    font-size: 50px;
+    cursor: pointer;
+    margin: 0px 20px;
+}
+#checkboxicon:hover{
+    color:var(--yellow-color)
+}
+#checkbox{
+    display:none;
+}
+nav #logo{
+    display:inline;
+    width: 40px;
+    height: 40px;
+    margin: 0px;
+    border-radius: 30px;
+    border:10px solid white;
+}
+nav#nav{
+    display: flex;
+    background-color: #101920;
+    border:none;
+}
+#navheader{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border:none;
+    color:var(--white-color);
+    padding:10px
+}
+#navh{
+    font-size: 50px;
+}
+#navlist{
+    color:var(--white-color);
+    flex:1;
+    border: 1px none;
+    display: flex;
+    margin-right: 0;
+    margin:0;
+    align-items: center;
+    justify-content: right;
+    float: right;
+    background-color: var(--black-color);
+}
+#navlist li{
+    display: inline;
+    font-size:22px;
+    padding:10px;
+    margin:10px;
+    cursor:pointer
+}
+#navlist li#home{
+    color:var(--yellow-color)
+}
+#navlist li:hover{
+    color:var(--yellow-color);
+}
+nav #navlist li:active{
+    color:#fcf6ff;   
+}
+main{
+    height:100dvh;
+    margin:0px;
+    border:none;
+    background-image: url("https://natimilla.github.io/oldcar/oldcar.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main #mainh{
+    display:block;
+    color:white;
+    text-align: center;
+    font-weight:bold;
+    font-size: 50px;
+    margin-bottom:2px;
+    border:none;
+    font-family:Arial, Helvetica, sans-serif;
+   
+}
+main #mainh #color{
+    color:#ffe71f;
+}
+main #mainp{
+    position:relative;
+    bottom:15px;
+    display:block;
+    color:white;
+    text-align: center;
+    font-weight:normal;
+    font-size: 30px;
+    border:none;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+main #mainp #flag{
+    position: relative;
+    top:3px;
+    height:30px;
+    width: 30px;
+    border-radius:50px;
+    
+}
+
+div form{
+    position:relative;
+    bottom:30px;
+   text-align: center;
+   border:none;
+   height:50px;
+  
+}
+div form #formtype{
+    height:51px;
+    width:300px;
+    color:#101920;
+    font-size:15px;
+    cursor:pointer;
+    font-family:Arial, Helvetica, sans-serif;
+    overflow-y: scroll;
+   
+}
+div form #formtype:hover{
+    border:2px solid #ffe71f;
+}
+div form #formvalue:hover{
+    border:2px solid #ffe71f;
+}
+div form #formvalue{
+    height:51px;
+    width:300px;
+    color:#101920;
+    font-size:15px;
+    cursor:pointer;
+    font-family:Arial, Helvetica, sans-serif;
+    overflow-y: scroll;
+    
+}
+div form button{
+    position:relative;
+    top:2px;
+    height:51px;
+    width: 48px;
+    background-color:var(--black-color);
+    cursor:pointer;
+}
+div form button #searchbar{
+    font-size:20px;
+    color:var(--white-color);
+}
+div form button:hover {
+   background-color:var(--yellow-color);
+}
+#featuredhead{
+    height: 50px;
+    padding:25px 0px 10px 0px;
+    font-size:42px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color:var(--white-color);
+    border:none;
+    background-color: var(--black-color);
+    text-align: center;
+    text-shadow:0px 0px 3px var(--yellow-color);
+}
+#carscollection{
+    background-color: var(--black-color); 
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    padding:0px 0px 20px 0px;
+}
+#carscollection .img{
+    width: 500px;
+    height:300px;
+    border-radius:40px 40px 0px 0px;
+    transition: transform 0.5s ease-in ;
+}
+#carscollection #car{
+ margin:20px 10px;
+ border:none;
+ border-radius: 40px;
+ display: block;
+ background-image: url("https://natimilla.github.io/fordescription/fordescription.jpg");
+ background-position:bottom right;
+ cursor: pointer;
+ overflow: hidden;
+}
+#carscollection #car:hover{
+    box-shadow:0px 0px 25px var(--yellow-color);
+}
+ #carscollection .img:hover{
+    transform:scale(1.06);
+}
+div#images{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#carscollection .img2{
+    display: none;
+    width: 300px;
+    height:240px;
+    border-radius:25px 25px 10px 10px;
+    padding:10px;
+    transition:transform 1s ease;
+}
+#carscollection .img2:hover{
+    transform:scale(1.04);
+}
+#carscollection #car #description{
+    position: relative;
+    top:7px;
+    color:var(--white-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    margin: 5px;
+    text-align:center;
+}
+#carscollection #car #description #ul{
+    list-style-position: inside;
+    text-align: center;
+    list-style-type:disc;
+    padding-left: 0;
+    display:flex;
+    padding: 20px;
+}
+#carscollection #car #description #ul li{
+    display:block;
+    text-shadow: 0px 0px 2px var(--black-color);
+    margin:2px;
+    color:var(--white-color);
+    border-right:0.2px solid var(--yellow-color);
+    padding:17px 2px;
+}
+#carscollection #car .model{
+    display: block;
+    height:18px;
+    padding: 0px;
+    border: 1px solid none;
+}
+#carscollection #car #price{
+    display: block;
+    height:18px;
+    padding: 0px;
+    border: 1px solid none;
+}
+#carscollection #car #year{
+    display: block;
+    height:18px;
+    padding: 0px;
+    border: 1px solid none;
+}
+div#about{
+    display:block;
+    height:100%;
+    padding:50px 30px;
+    border:none;
+    background-image: url("https://natimilla.github.io/oldcar/oldcar.jpg");
+    background-position: center;
+    background-size: cover;
+    background-color: #1a2935;
+}
+#aboutus{
+    display: block;
+    text-align:center;
+    height:50px;
+    border:none;
+    color:var(--yellow-color);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+}
+#aboutp{
+    position: relative;
+    left:5px;
+    margin-top:50px;
+    color:var(--yellow-color);
+    font-size:18px;
+    display:block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    opacity:0.999;
+}
+#aboutp2{
+    position: relative;
+    opacity:0.999;
+    left:5px;
+    font-weight: lighter;
+    margin-top:22px;
+    color:var(--yellow-color);
+    font-size:18px;
+    display:block;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+div#contact{
+    display: flex;
+    border:none;
+    height:auto;
+    background-color: var(--black-color);
+}
+#messagehead{
+    display:block;
+    margin-top:5px;
+    border:none;
+    text-align: center;
+    background-color: transparent;
+    color:var(--yellow-color);
+    font-size: 28px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#label{
+    font-size: 22px;
+    color: var(--yellow-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#margin{
+    margin-left: 10px;
+}
+#messageform{
+    display:block;
+    width: 400px;
+    height:440px;
+    margin-left: auto;
+    margin-right: 40px;
+    background-color: var(--black-color);
+   margin-top:100px;
+    border:1px solid black;
+    flex:0.6;   
+    box-shadow: 1px 1px 1px rgb(167, 165, 165);
+    border-radius:1px;
+}
+
+#labelinput{
+    margin-top:15px;
+    margin-bottom:15px;
+}
+#name{
+    color:var(--yellow-color);
+    background-color: var(--black-color);
+}
+#dm{
+    height: 100px;
+    background-color: var(--black-color);
+    color:var(--yellow-color);
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+#last{
+    color:var(--yellow-color);
+    background-color: var(--black-color);
+}
+#number{
+    color:var(--yellow-color);
+    background-color: var(--black-color);
+}
+#warning{
+    color:red;
+}
+#submit{
+    margin:15px;
+    font-size: 22px;
+    color:var(--yellow-color);
+    background-color: var(--black-color);
+    cursor:pointer;
+}
+#contacth{
+    margin:40px;
+    flex:1;
+   
+}
+#contacth #get{
+    display: block;
+    color:var(--yellow-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight:bold;
+    margin-bottom:0px;
+}
+#horizontal{
+    border:2px solid var(--yellow-color)
+}
+#phone{
+    display: block;
+    text-decoration: none;
+    color:var(--yellow-color);
+    margin-top:20px;
+    font-size: 20px;
+    margin-bottom:0px;
+}
+#email{
+    display: block;
+    text-decoration: none;
+    color:var(--yellow-color);
+    margin-top:10px;
+    font-size: 20px;
+    margin-bottom:0px;
+}
+#location{
+    display: block;
+    text-decoration: none;
+    color:var(--yellow-color);
+    margin-top:10px;
+    font-size: 20px;
+    margin-bottom:0px;
+}
+footer{
+    padding: 50px 10px 10px 10px;
+    border:none;
+    background-color: #1a2935;
+    background-image: url("https://natimilla.github.io/oldcar/oldcar.jpg");
+    background-attachment:scroll;
+    background-position: center;
+    background-size: cover;
+}
+#footerimg{
+    display: block;
+    width:300px;
+    height:300px;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:10px;
+    border-radius: 300px;
+    box-shadow:0px 0px 50px var(--yellow-color);
+    animation-name:image;
+    animation-duration:10s;
+    animation-iteration-count:infinite;
+    animation-delay:0s;
+    animation-timing-function: linear;
+  }
+   @keyframes image{
+    0%{rotate:0deg;}
+    100%{rotate:360deg;}
+   }
+#footericons{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+}
+#footericon{
+    position: relative;
+    left:10px;
+    text-decoration: none;
+    font-size:50px;
+    color:var(--yellow-color);
+    margin-right:20px;
+    transition: transform 0.5s ease-in;
+}
+#footericon:hover{
+    transform: scale(1.2);
+}
+#copyright{
+    display: block;
+    text-align: center;
+    margin-top:60px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color:var(--yellow-color);
+    font-weight: lighter;
+    opacity:0.7;
+}
+#copyright a{
+  text-decoration: none;
+}
+@media  screen  and (max-width:1200px){
+    nav #navlist li{
+       font-size:20px;
+    }
+    nav #logo{
+        width:20px;
+        height:20px;
+    }
+}
+@media screen and (max-width:1180px){
+       nav #navh{
+        font-size:32px;
+       }
+}
+@media screen and (max-width:946px){
+    
+    nav#nav{
+        display: block;
+    }
+    #checkboxicon{
+        display: inline;
+        font-size: 32px;
+        flex: 1;
+        border:none;
+    }
+    #navheader{
+        border:none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    nav #navh{
+        font-size: 40px;
+    }
+    nav #logo{
+        width: 40px;
+        height: 40px;
+    }
+    #navlist{
+        position:absolute;
+        width:93.8%;
+        left:-200%;
+        margin: 0 auto;
+        display: block;
+        transition: left 0.5s ease-in;
+        border:none;
+    }
+    #navlist li{
+        display: block;
+        text-align: center;
+        width:90%;
+        margin:10px auto;
+        border:none;
+    }
+   div#about{
+    height: auto;
+   }
+   #messageform{
+    margin: 50px auto;
+    height:auto;
+   }
+   div#contact{
+    display: block;
+    height:auto;
+    margin:0;
+    padding: 20px;
+   }
+}
+@media screen and (max-device-width:946px){
+    body{
+        overflow-x: hidden;
+    }
+    nav#nav{
+        display: block;
+       
+    }
+    #checkboxicon{
+        display: inline;
+        font-size: 42px;
+        flex: 1;
+    }
+    #navheader{
+        border:none;
+        display: flex;
+        flex-wrap: wrap;
+        border:none;
+        padding:10px;
+    }
+    
+    nav #navh{
+        font-size: 50px;
+        margin:20px;
+    }
+    nav #logo{
+        width: 50px;
+        height: 50px;
+        border-radius:60px;
+    }
+    #navlist{
+        position:absolute;
+        width:95%;
+        left:-200%;
+        margin: 0 auto;
+        display: block;
+        transition: left 0.5s ease-in;
+        border:none;
+        font-size: 100px;
+    }
+    #navlist li{
+        
+        display: block;
+        text-align: center;
+        border:none;
+        width:93%;
+        margin:10px 0px;
+        
+    }
+    nav #navlist li{
+        font-size: 40px;
+    }
+    main{
+        height:100dvh;
+        padding:20px;
+        display: flex;
+        justify-content: center;
+        align-items: left;
+    }
+    #position{
+        border:none;
+        height:585px;
+    }
+    main #mainh{
+        font-size:80px ;
+    }
+    main #mainp{
+        font-size:50px  
+    }
+    main #mainp #flag{
+       
+        height:50px;
+        width: 50px;
+        border-radius:50px;
+        
+    }
+    div form #formtype{
+        display: block;
+        margin: 10px auto;
+        height:81px;
+        width:500px;
+        text-align: center;
+        font-size:20px;
+      
+       
+    }
+    div form #formvalue{
+        display: block;
+        margin: 10px auto;
+        height:81px;
+        width:500px;
+        text-align: center;
+        font-size:20px;
+      
+       
+    }
+    div form button{
+        position:relative;
+        top:2px;
+        height:81px;
+        width: 500px;
+        background-color:var(--black-color);
+        cursor:pointer;
+    }
+    div form button #searchbar{
+        font-size:50px;
+       
+    }
+    #featuredhead{
+        height: auto;
+        padding:45px ;
+        font-size:52px;
+        margin:0;    
+    }
+    #carscollection .img{
+        width: 800px;
+        height:500px;
+    }
+    #carscollection #car #description{
+       font-size: 30px;
+        margin: 15px;
+        text-align:center;
+    }
+   div#about{
+    height: auto;
+    padding:30px;
+   }
+   #aboutus{
+    height:auto;
+    font-size: 80px;
+}
+#aboutp{
+    margin:50px auto;
+    font-weight: lighter;
+    color:var(--yellow-color);
+    font-size:12px;
+
+   }
+#aboutp2{
+    margin:22px auto;
+    color:var(--yellow-color);
+    font-weight: lighter;
+    font-size:12px;
+}
+
+   #messageform{
+    margin: 100px auto;
+    height:auto;
+    width:auto
+   }
+   div#contact{
+    display: block;
+    height:auto;
+    margin:0;
+    padding: 20px;
+   }
+   #contacth #get{
+   font-size: 42px;
+    font-weight:bold;
+    margin-bottom:0px;
+}
+#horizontal{
+    border:5px solid var(--yellow-color)
+}
+#phone{
+    font-size: 18px;
+    margin:20px 0px 0px 10px;
+}
+#email{
+    margin:30px 0px 0px 10px;
+    font-size: 18px;
+}
+#location{
+    font-size:18px;
+    margin:10px 0px 0px 10px;
+}
+   #label{
+    font-size: 42px;
+    }
+    #messagehead{ 
+        margin-top:50px;
+        border:none;
+        font-size: 42px;
+           }
+#name{
+    width:300px;
+    height:50px;
+    font-size:30px;
+}
+#dm{
+    height: 200px;
+    width:500px;
+    background-color: var(--black-color);
+    color:var(--yellow-color);
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+#last{
+    width:300px;
+    height:50px;
+    font-size:30px;
+}
+#number{
+    width:300px;
+    height:50px;
+    font-size:30px;
+}
+#warning{
+    color:red;
+}
+#submit{
+    margin:35px auto;
+    padding: 20px;
+    font-size: 42px;
+   
+}
+#margin{
+    margin-left: 10px;
+}
+#copyright{
+    font-size: 13px;
+    font-weight: lighter;
+    opacity:0.7;
+}
+}
+
+
